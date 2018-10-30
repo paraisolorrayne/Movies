@@ -193,7 +193,7 @@ extension CGFloat {
 
         result.addArc(withCenter: CGPoint(x: (x + (rad * 2) + pitCornerRad), y: (y + pitCornerRad) ), radius: pitCornerRad, startAngle: CGFloat(180).toRadians(), endAngle: CGFloat(270).toRadians(), clockwise: true)
 
-        result.addLine(to: CGPoint(x: x + (pitCornerRad * 2) + (rad * 2), y: y)) // rounding errors correction lines
+        result.addLine(to: CGPoint(x: x + (pitCornerRad * 2) + (rad * 2), y: y))
         result.addLine(to: CGPoint(x: 0, y: 0))
 
         result.close()
@@ -286,7 +286,7 @@ extension CGFloat {
         let margin: CGFloat = 24
         let x = view.frame.origin.x
         var y = barRect.origin.y + margin
-        let h = barHeight - (margin * 2)
+        let h = barHeight - margin
         let w = view.frame.width
         if self.selectedItem == item {
             y = barRect.origin.y - (self.circleRadius / 2) + (margin / 2)
@@ -300,7 +300,7 @@ extension CGFloat {
         itemView.isHidden = false
 
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .milliseconds(400) , execute: {
-            UIView.animate(withDuration: 0.4) {
+            UIView.animate(withDuration: 0.25) {
                 itemView.alpha = 1
             }
         })

@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,7 +30,7 @@
         <scene sceneID="cgh-6b-EMd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tZS-Ff-NVf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wishlist" id="DAg-zl-Vi7"/>
+                    <tabBarItem key="tabBarItem" title="Wishlist" image="wish" id="DAg-zl-Vi7"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AP8-AE-KVM">
@@ -46,4 +47,7 @@
             <point key="canvasLocation" x="-55.200000000000003" y="174.96251874062969"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wish" width="30" height="30"/>
+    </resources>
 </document>
