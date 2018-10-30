@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tZS-Ff-NVf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wishlist View Controller-->
+        <scene sceneID="GCM-qE-fZM">
+            <objects>
+                <viewController storyboardIdentifier="WishlistViewController" id="5U5-B0-cRU" customClass="WishlistViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WDj-st-6Hp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oi3-cz-m7y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y9H-rj-JIY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ih-wS-RGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="174.96251874062969"/>
+        </scene>
+        <!--Wishlist-->
+        <scene sceneID="cgh-6b-EMd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tZS-Ff-NVf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wishlist" id="DAg-zl-Vi7"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AP8-AE-KVM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5U5-B0-cRU" kind="relationship" relationship="rootViewController" id="cZk-vf-yc2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HME-Of-gRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.200000000000003" y="174.96251874062969"/>
+        </scene>
+    </scenes>
+</document>
